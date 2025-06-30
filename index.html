@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="./css/sheetStyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="contenedor">
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
+        <h1>Hoja de Vida</h1>
 
-        <link rel="shortcut icon" href="../img/seg.png" type="image/x-icon">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Mi Pagina</title>
-    </head>
-
-    <body class="background">
-
-        <header class="header">
-            <nav class="header__menu">
-                <a class="header__menu__link" href="/index.html">Home</a>
-                <a class="header__menu__link" href="../pages/about.html">Sobre
-                    mí</a>
-            </nav>
+        <header class="encabezado">
+            <div class="encabezado-contenido">
+                <div class="info-personal">
+                    <h2>Luis Eduardo Surec Cumes</h2>
+                    <p>Tel: (502) 49577970</p>
+                    <p>Email: luissurec74@gmail.com</p>
+                    <p>Dirección: Ciudad, Guatemala</p>
+                </div>
+                <div class="imagen-perfil">
+                    <!-- Usando un placeholder para la imagen de perfil -->
+                    <img src="./img/fotowicho.png" alt="Foto de perfil">
+                </div>
+            </div>
         </header>
 
-        <main class="presentacion">
-            <section class="presentacion__contenido">
+        <section>
+            <h2>Objetivos</h2>
+            <p>Integrarme al equipo de trabajo que me sea asignado, aportando mis conocimientos para el cumplimiento de las metas establecidas.</p>
+        </section>
 
-                <p class="presentacion__contenido__titulo">
-                    <span> !Hola a todos! </span>
-                    <strong
-                        class="titulo-destaque"> Mi nombre es Luis Surec
-                    </strong></p>
+        <section>
+            <h2>Experiencia</h2>
+            <ul>
+                <li><strong>Servicios Pastorales Administrativos, S. A.</strong> - Contador General. (Marzo 2011 - Actualidad) <br>Tel: 25011660</li>
+                <li><strong>Servicios Pastorales Administrativos, S. A.</strong> - Auxiliar Contable. (Enero 2008 - Febrero 2011) <br>Tel: 25011660</li>
+                <li><strong>Asociacion Civil Proyecto de Desarrollo SAntiago ONG</strong> - Auxiliar de Cartera. (Abril 2005 - Diciembre 2007) <br>Tel: 25011660</li>
+                <li><strong>Supermercado y Farmacia Utatlan</strong> - Contador. (Noviembre 1998 - Noviembre 2004)</li>
+            </ul>
+        </section>
 
-                <p class="presentacion__contenido__titulo__texto">
-                    Hoy, me encuentro en un emocionante punto de inflexión
-                    profesional, combinando mi vasta experiencia en el mundo de
-                    los números con mi pasión por el desarrollo web."
+        <section>
+            <h2>Diplomas</h2>
+            <ul>
+                <li>Estudiante de REact Alura Latan, 2025</li>
+                <li>Fundamentos Inteligencia Articial Gemini -ChatGPT- Alura Latam, 2025</li>
+                <li>Fundamentos de HTML, CSS, JavaScript - Edutek, 2022</li>
+                <li>Fundamento de Tecnología - Edutek, Enero 2022</li>
+                <li>Fundamento de MYSQL - Edutek, Agosto 2021</li>
+                <li>CNNA1 - Edutek</li>
+                <li>Seminario SAT - Inventario</li>
+                <li>Administración de la Pequeña Empresa - ACT</li>
+            </ul>
+        </section>
 
-                </p>
+        <section>
+            <h2>Nivel Académico</h2>
+            <ul>
+                <li>Primer Semestre de Auditoría - U. Mariano Gálvez, 2016</li>
+                <li>Diplomado en Mantenimiento de Equipos de Cómputo - U. Francisco Marroquín, 1999</li>
+                <li>Perito Contador - Instituto Tec. de Educación Media, 1996</li>
+                <li>Primaria - Colegio Evangélico Mixto Bethesda, 1987</li>
+            </ul>
+        </section>
 
-                <p class="presentacion__contenido__titulo__texto">
-                    "Motivado por el deseo de expandir mis horizontes y adaptarme a las demandas del mundo digital, he emprendido un camino de aprendizaje en el desarrollo web."
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Manejo de paquetes Office</li>
+                <li>Base de datos Access y creación de formularios, consulta  e informes</li>
+                <li>Bases de datos MYSQL</li>
+                <li>Scafi Win, Scafi Online, COI-ASPEL</li>
+                <li>Administración de permisos en sistemas contables y de facturación online</li>
+            </ul>
+        </section>
 
-                </p>
+        <section>
+            <h2>Referencias</h2>
+            <ul>
+                <li>Oscar Xunic - Asociacion Civil Proyecto de Desarrollo SAntiago ONG <br>-</li>
+                <li>Gloria Isabel Mejía - Asesora de Ventas (Kuljay Casa de Ecuentros) <br> Cel: -</li>
+                <li>Carlos Tamup - Coordinador de Educacion <br> Cel: -</li>
+                <li>Teresa Isabel Puluc Velasquez - Psicologa Clínica <br>  Cel: - </li>
+            </ul>
+        </section>
 
-                <div class="presentacion__enlace">
-                    <h2 class="presentacion__enlace__subtitulo">Accede a mis
-                        redes</h2>
 
-                    <a class="presentacion__enlace__link"
-                        href="https://www.linkedin.com/notifications/?filter=all">
-                        <img src="./img/linkedin.png" alt="Instargram">
-                        linkedin</a>
 
-                    <a class="presentacion__enlace__link"
-                        href="https://github.com/"><img
-                            src="./img/github.png" alt="GitHub">GitHub</a>
+    </div>
 
-                </div>
-
-            </section>
-
-            <img class="imgPerfil" src="./img/imgP.jpg"
-                alt="Foto de Luis Surec desarrolando un proyecto">
-
-        </main>
-
-        <footer class="footer">
-            <div class="contenedor">
-                <div>
-                    <h3>Enlaces Útiles</h3>
-                    <ul>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Información de Contacto</h3>
-                    <p><strong>Correo:</strong>luissurec@gmail.com</p>
-                    <p><strong>Teléfono:</strong> ·······</p>
-                </div>
-
-                <div>
-                    <p>&copy; 2025</p>
-                    <p>Mi Sitio Web. Todos los derechos reservados.</p>
-                </div>
-
-            </div>
-        </footer>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-    </body>
-
+</body>
 </html>
