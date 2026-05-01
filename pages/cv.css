@@ -1,121 +1,187 @@
 
-/* Heredamos los estilos base que ya tenías y añadimos mejoras */
+/* Paleta de colores profesional */
 :root {
-    --primario: #2c3e50;
-    --acento: #3498db;
-    --fondo: #3e5669;
+    --primario: #2c3e50; /* Azul oscuro para textos principales */
+    --acento: #3498db;   /* Azul claro para resaltar secciones */
+    --fondo: #3e5669;   /* El fondo que ya usas para el body */
     --blanco: #ffffff;
-    --texto: #333;
-    --gris-suave: #f4f7f6;
+    --texto: #333333;
+    --gris-borde: #eeeeee;
 }
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--fondo);
     margin: 0;
-    line-height: 1.6;
-}
-
-.contenedor {
-    max-width: 850px;
-    margin: 20px auto;
-    background: var(--blanco);
-    padding: 50px;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-/* Encabezado CV */
-.encabezado-cv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid var(--primario);
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-}
-
-.info-personal h1 {
-    margin: 0;
-    color: var(--primario);
-    font-size: 2rem;
-}
-
-.imagen-perfil img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border: 3px solid var(--gris-suave);
-    border-radius: 8px;
-}
-
-/* Secciones */
-.seccion-cv {
-    margin-bottom: 25px;
-}
-
-.seccion-cv h2 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: var(--acento);
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.item-experiencia {
-    margin-bottom: 15px;
-}
-
-.subtitulo {
-    font-style: italic;
-    color: #666;
-    margin-top: -10px;
-}
-
-/* Grid para optimizar espacio */
-.grid-2-columnas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.lista-limpia {
-    list-style: none;
     padding: 0;
+    color: var(--texto);
 }
 
-.lista-limpia li {
-    margin-bottom: 8px;
-    padding-left: 15px;
-    border-left: 2px solid var(--acento);
-}
-
-/* Estilos de Navegación (Iguales al index para consistencia) */
+/* Navegación superior */
 .nav-header {
     background-color: var(--primario);
     padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .contenedor-nav {
     max-width: 850px;
     margin: 0 auto;
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    padding: 0 20px;
 }
 
 .nav-link {
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
 }
 
-.nav-link.activo {
+.nav-link:hover, .nav-link.activo {
     color: var(--acento);
 }
 
+/* Contenedor principal de la Hoja de Vida */
+.cv-container {
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: var(--blanco);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Encabezado con foto e info personal[cite: 1] */
+.encabezado-cv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primario);
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.info-personal h1 {
+    margin: 0 0 10px 0;
+    color: var(--primario);
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+
+.info-personal p {
+    margin: 3px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.imagen-perfil img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid var(--gris-borde);
+}
+
+/* Secciones generales */
+.seccion-cv {
+    margin-bottom: 30px;
+}
+
+.seccion-cv h2 {
+    color: var(--acento);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--gris-borde);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la experiencia laboral[cite: 1] */
+.item-experiencia {
+    margin-bottom: 20px;
+}
+
+.item-experiencia h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--primario);
+}
+
+.subtitulo {
+    font-style: italic;
+    color: var(--acento);
+    font-weight: 600;
+    margin: 2px 0 8px 0;
+}
+
+/* Grid para Diplomas y Habilidades[cite: 1] */
+.grid-2-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.lista-limpia {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-limpia li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.lista-limpia li::before {
+    content: "•";
+    color: var(--acento);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Nivel Académico[cite: 1] */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
 .pie-pagina {
     text-align: center;
-    color: white;
-    padding: 20px;
+    padding: 30px;
+    color: var(--blanco);
+    opacity: 0.8;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .encabezado-cv {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .imagen-perfil {
+        margin-bottom: 20px;
+    }
+
+    .grid-2-columnas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .cv-container {
+        padding: 25px;
+        margin: 15px;
+    }
 }
